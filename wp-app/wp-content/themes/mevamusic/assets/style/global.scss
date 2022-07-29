@@ -1,0 +1,46 @@
+@import "assets/style/variables";
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 49px;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+
+.default-section {
+    padding-top: 50px;
+    padding-bottom: 95px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: content-box;
+
+    @include _768 {
+        max-width: 668px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $c-white;
+}
+
+ul {
+    list-style: none;
+}

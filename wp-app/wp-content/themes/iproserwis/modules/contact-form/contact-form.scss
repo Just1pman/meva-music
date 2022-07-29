@@ -1,0 +1,19 @@
+@import "../../assets/style/variables";
+
+.contact-form {
+  padding: 75px 0;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: $c-dark-gray;
+  }
+
+}
+
+
+

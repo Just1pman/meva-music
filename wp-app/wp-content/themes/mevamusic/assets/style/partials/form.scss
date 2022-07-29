@@ -1,0 +1,108 @@
+//@import "../variables";
+//
+//.wpcf7 {
+//  &-response-output {
+//    display: none;
+//  }
+//  &-not-valid-tip {
+//    display: none!important;
+//  }
+//  .contact-form__wrapper {
+//    padding: 72px 0 42px 0;
+//      display: flex;
+//      justify-content: center;
+//      @include _992 {
+//        padding: 40px 0 20px 0;
+//      }
+//      @include _768 {
+//        display: block;
+//      }
+//  }
+//  .contact-form__wrapper-modal {
+//    display: grid;
+//    justify-content: center;
+//    padding: 32px 0 14px 0;
+//    @include _992 {
+//      padding: 24px 0 6px 0;
+//    }
+//  }
+//  .contact-form__content {
+//    padding-right: 20px;
+//    width: 100%;
+//    max-width: 415px;
+//    @include _768 {
+//      max-width: 100%;
+//      padding-right: 0;
+//    }
+//  }
+//  input[type=text], input[type=tel],input[type=email] {
+//    margin-bottom: 18px;
+//    padding: 17px 15px;
+//    max-width: 415px;
+//    width: 100%;
+//    border: 1px solid $c-gray-line;
+//    border-radius: 13px;
+//    font-weight: 500;
+//    font-size: 16px;
+//    line-height: 22px;
+//    -moz-appearance: textfield;
+//    &::-webkit-inner-spin-button {
+//      -webkit-appearance: none;
+//
+//    }
+//
+//    @include _768 {
+//      max-width: 100%;
+//    }
+//    &::placeholder {
+//      color: $c-dark-gray;
+//      font-weight: 300;
+//      font-size: 16px;
+//      line-height: 22px;
+//    }
+//
+//    &:focus-visible {
+//      -webkit-text-fill-color: $c-black;
+//      outline-color: $c-blue
+//    }
+//  }
+//
+//  &-not-valid{
+//    border: 1px solid $c-red!important;
+//    &::placeholder {
+//      color: $c-red;
+//    }
+//  }
+//  p {
+//    width: 100%;
+//  }
+//  textarea {
+//    width: 100%;
+//    max-width: 704px;
+//    padding: 17px 15px;
+//    height: 214px;
+//    resize: none;
+//    border: 1px solid $c-gray-line;
+//    border-radius: 13px;
+//    font-weight: 500;
+//    font-size: 16px;
+//    line-height: 22px;
+//
+//    &::placeholder {
+//      font-weight: 300;
+//      font-size: 16px;
+//      line-height: 22px;
+//      color: $c-dark-gray;
+//    }
+//
+//    &:focus-visible {
+//      -webkit-text-fill-color: $c-black;
+//      outline-color: $c-blue
+//    }
+//
+//    @include _768 {
+//      max-width: 100%;
+//    }
+//
+//  }
+//}

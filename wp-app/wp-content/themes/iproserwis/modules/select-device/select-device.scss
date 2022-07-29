@@ -1,0 +1,66 @@
+@import "../../assets/style/variables";
+
+.select-device {
+  background-color: $c-white;
+  padding: 150px 0;
+
+  @include _992 {
+    padding: 60px 0;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 90px;
+
+    @include _992 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .devices-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include _992 {
+      flex-direction: column;
+    }
+
+    .device {
+      margin-right: 100px;
+      max-width: 288px;
+      transition: $transition;
+
+      @include _992 {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+
+      p {
+        margin-top: 32px;
+        color: $c-black;
+        text-align: center;
+
+        @include _992 {
+          margin-top: 12px;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @include _992 {
+          margin-bottom: 0;
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+
+        p {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

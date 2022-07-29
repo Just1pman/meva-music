@@ -1,0 +1,53 @@
+//@import "assets/style/variables";
+//
+//.modal {
+//  display: none;
+//  background-color: $c-white;
+//  padding: 90px 64px;
+//  border-radius: 30px;
+//  max-width: 550px;
+//
+//  &.form {
+//    .modal-headline {
+//      font-weight: 500;
+//      font-size: 24px;
+//      line-height: 33px;
+//      letter-spacing: -0.01em;
+//    }
+//
+//    .modal-text {
+//      font-weight: 300;
+//      font-size: 16px;
+//      line-height: 24px;
+//      letter-spacing: -0.01em;
+//      color: $c-dark-gray;
+//    }
+//  }
+//
+//  @include _992 {
+//    padding: 40px 24px;
+//  }
+//
+//  .modal-image {
+//    max-width: 75px;
+//    margin: 0 auto 30px auto;
+//  }
+//
+//  .modal-headline {
+//    margin-bottom: 12px;
+//    text-align: center;
+//  }
+//
+//  .modal-text {
+//    text-align: center;
+//    font-weight: 300;
+//  }
+//}
+//
+//.carousel__button.is-close {
+//  margin-top: 15px !important;
+//  margin-right: 15px !important;
+//}
+//.service-input, .price-input {
+//  display: none;
+//}

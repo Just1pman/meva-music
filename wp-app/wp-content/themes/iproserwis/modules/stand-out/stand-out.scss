@@ -1,0 +1,72 @@
+@import "../../assets/style/variables";
+
+.stand-out {
+  padding-bottom: 150px;
+  background-color: $c-white;
+
+  @include _992 {
+    padding-bottom: 60px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .stand-out_wrapper {
+    display: grid;
+    gap: 90px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+
+    @include _992 {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .stand-out__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+
+      @include _992 {
+        margin-top: 24px;
+      }
+
+      .card-image {
+        width: 100%;
+        max-width: 75px;
+        margin-bottom: 45px;
+
+        @include _992 {
+          margin-bottom: 16px;
+        }
+      }
+
+      .card-headline {
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      .card-text {
+        font-weight: 300;
+        text-align: center;
+      }
+
+      .card__more {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        margin-top: 32px;
+        color: $c-blue;
+        transition: $transition;
+        text-decoration: underline;
+
+        &:hover {
+          color: $c-blue-hover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../assets/style/variables";
+
+.text-module {
+  &__title {
+    text-align: center;
+  }
+
+  &__description {
+    color: $c-dark-gray;
+    padding: 24px 0;
+    @include _768 {
+      padding: 16px 0;
+    }
+    @include _480 {
+      padding: 12px 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../assets/style/variables";
+
+.about-us {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 184px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
