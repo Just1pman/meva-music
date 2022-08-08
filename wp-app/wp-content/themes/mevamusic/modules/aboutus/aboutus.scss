@@ -1,14 +1,31 @@
 @import "../../assets/style/variables";
 
 .about-us {
+
+
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 184px;
+    display: flex;
+    column-gap: 140px;
+  }
+  &__slider {
+    width: 50%;
+  }
+
+  img {
+    width: auto;
+    height: 100%;
   }
 
   &__description {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.card {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 500px;
   }
 }

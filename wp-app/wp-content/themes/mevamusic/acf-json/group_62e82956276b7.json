@@ -1,9 +1,9 @@
 {
-    "key": "group_62e0409e833f6",
-    "title": "AboutUs module",
+    "key": "group_62e82956276b7",
+    "title": "Equipment module",
     "fields": [
         {
-            "key": "field_62e040ab28112",
+            "key": "field_62e8295b5a311",
             "label": "Заголовок",
             "name": "title",
             "type": "text",
@@ -22,33 +22,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62e040c628113",
-            "label": "Описание",
-            "name": "description",
-            "type": "textarea",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_62e040ab28112",
-                        "operator": "!=empty"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_62e4369a43ffd",
+            "key": "field_62e829895a312",
             "label": "Фотографии",
             "name": "photos",
             "type": "repeater",
@@ -64,15 +38,15 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "Загрузить фото",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_62e436b243ffe",
-                    "label": "Фото",
+                    "key": "field_62e829a15a313",
+                    "label": "photo",
                     "name": "photo",
                     "type": "image",
                     "instructions": "",
-                    "required": 0,
+                    "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -80,7 +54,7 @@
                         "id": ""
                     },
                     "return_format": "array",
-                    "preview_size": "medium",
+                    "preview_size": "full",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -98,7 +72,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/aboutus"
+                "value": "acf\/equipment"
             }
         ]
     ],
@@ -110,5 +84,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1659123559
+    "modified": 1659382240
 }

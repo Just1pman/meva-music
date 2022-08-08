@@ -7,7 +7,7 @@ Mode: preview
 
 $title = get_field('title');
 $description = get_field('description');
-
+$photos = get_field('photos');
 ?>
 
 <?php if (!is_admin()) : ?>
@@ -19,26 +19,22 @@ $description = get_field('description');
                     </div>
                 <?php endif; ?>
                 <div class="about-us__wrapper">
-                    <div class="about_us__slider">
-                        <!-- Slider main container -->
+                    <div class="about-us__slider">
                         <div class="swiper">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">Slide 1</div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                ...
+                                <?php foreach ($photos as $photo) : ?>
+                                    <div class="swiper-slide">
+                                        <div class="card-wrapper">
+                                            <img src="<?= $photo['photo']['url'] ?>" alt="<?= $photo['photo']['description'] ?>">
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
 
-                            <!-- If we need navigation buttons -->
+
+                            <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                     <?php if (!empty($description)) : ?>
