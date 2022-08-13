@@ -25,7 +25,12 @@ $photos = get_field('photos');
                                 <?php foreach ($photos as $photo) : ?>
                                     <div class="swiper-slide">
                                         <div class="card-wrapper">
-                                            <img src="<?= $photo['photo']['url'] ?>" alt="<?= $photo['photo']['description'] ?>">
+                                            <img
+                                                    class="swiper-lazy"
+                                                    data-src="<?= $photo['photo']['url'] ?>"
+                                                    alt="<?= $photo['photo']['description'] ?>"
+                                            >
+                                            <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
