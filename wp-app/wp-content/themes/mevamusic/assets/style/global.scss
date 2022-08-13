@@ -44,3 +44,9 @@ a {
 ul {
     list-style: none;
 }
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
