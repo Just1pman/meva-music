@@ -20,7 +20,7 @@ $photos = get_field('photos');
                 <?php endif; ?>
                 <div class="about-us__wrapper">
                     <div class="about-us__slider">
-                        <div class="swiper">
+                        <div class="swiper aboutUsSlider">
                             <div class="swiper-wrapper">
                                 <?php foreach ($photos as $photo) : ?>
                                     <div class="swiper-slide">
