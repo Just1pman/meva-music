@@ -11,7 +11,14 @@
 
         <?php if ($subtitle && $subtitle__link) : ?>
             <b class="overlay__subtitle">
-                <?= $subtitle ?> <a class="overlay__link"><?= $subtitle__link ?></a>
+                <?= $subtitle ?>
+                <a
+                        data-modal-data=""
+                        class="overlay__link btn-modal map-modal"
+                        href="#map-modal"
+                >
+                    <?= $subtitle__link ?>
+                </a>
             </b>
         <?php endif; ?>
     </div>
