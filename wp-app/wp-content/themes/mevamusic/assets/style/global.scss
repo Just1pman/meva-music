@@ -1,12 +1,14 @@
 @import "assets/style/variables";
 
-body, html {
+body, html, p {
     margin: 0;
     padding: 0;
 }
 
 .main {
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-title {

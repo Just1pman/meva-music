@@ -11,6 +11,9 @@
 
 <?php
 $logo = get_field('logo', 'options');
+
+$bg_image = get_field('bg_img', 'options');
+
 ?>
 <body>
 <header id="header">
@@ -63,4 +66,4 @@ $logo = get_field('logo', 'options');
         </div>
     </div>
 </header>
-<main id="main" class="main" data-page-id="<?= get_queried_object_id() ?>">
+<main id="main" class="main" data-page-id="<?= get_queried_object_id() ?>" style="background-image: url(<?= $bg_image['url'] ?>)">

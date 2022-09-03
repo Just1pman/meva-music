@@ -3,6 +3,41 @@
     "title": "Глобальные настройки",
     "fields": [
         {
+            "key": "field_63135a5cb34fc",
+            "label": "Основное",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_63135a6aafe80",
+            "label": "Телефон",
+            "name": "phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_63134ba1045a8",
             "label": "Социальные сети",
             "name": "",
@@ -128,6 +163,30 @@
             "min_size": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_63135b43bae7b",
+            "label": "Фоновая картинка",
+            "name": "bg_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -147,5 +206,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1662209370
+    "modified": 1662216925
 }
