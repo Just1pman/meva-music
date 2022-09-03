@@ -13,9 +13,9 @@ $services = get_field('cards');
     <section id="services" class="services default-section">
         <div class="container">
             <?php if (!empty($title)) : ?>
-                <div class="services__title section-title">
+                <h2 class="services__title section-title">
                     <?= $title ?>
-                </div>
+                </h2>
             <?php endif; ?>
             <div class="services__wrapper">
                 <?php foreach ($services as $service) : ?>

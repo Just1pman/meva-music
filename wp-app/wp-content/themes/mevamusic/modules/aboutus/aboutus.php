@@ -14,9 +14,9 @@ $photos = get_field('photos');
         <section id="about-us" class="about-us default-section">
             <div class="container">
                 <?php if (!empty($title)) : ?>
-                    <div class="about-us__title section-title">
+                    <h2 class="about-us__title section-title">
                         <?= $title ?>
-                    </div>
+                    </h2>
                 <?php endif; ?>
                 <div class="about-us__wrapper">
                     <div class="about-us__slider">

@@ -6,30 +6,28 @@ Mode: preview
 */
 
 $title = get_field('title');
-$services = get_field('cards');
+$form = get_field('contact_form');
+
 ?>
 
 <?php if (!is_admin()) : ?>
-    <section id="services" class="services default-section">
+    <section id="form" class="default-section form-section ">
         <div class="container">
-            <?php if (!empty($title)) : ?>
-                <div class="services__title section-title">
-                    <?= $title ?>
-                </div>
-            <?php endif; ?>
-            <div class="services__wrapper">
-                <?php foreach ($services as $service) : ?>
-                    <div class="card">
-                        <img
-                            class="hide-text"
-                            src="<?= $service['image']['url'] ?>"
-                            alt="<?= $service['photo']['description'] ?>"
-                        >
-                        <p class="card__title"><?= $service['title'] ?></p>
-                        <button class="card__button">Подробнее</button>
-                    </div>
+            <div class="form__wrapper">
+                <div class="form__left">
+                    <?php if (!empty($title)) : ?>
+                        <h2 class="form__title section-title">
+                            <?= $title ?>
+                        </h2>
+                    <?php endif; ?>
 
-                <?php endforeach; ?>
+                    <?php if (!empty($form)) : ?>
+                        <div class="contact-form__from">
+                            <?= $form ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <div class="form__right">1</div>
             </div>
         </div>
     </section>
