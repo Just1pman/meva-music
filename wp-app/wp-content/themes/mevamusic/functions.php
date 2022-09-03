@@ -60,8 +60,6 @@ add_filter('show_admin_bar', '__return_false');
 add_action('after_setup_theme', function () {
     register_nav_menus([
         'header_menu' => 'Меню хедер',
-        'footer_left_menu' => 'Левое меню футер',
-        'footer_right_menu' => 'Правое меню футер',
     ]);
     add_theme_support(
         'custom-logo',
@@ -82,103 +80,6 @@ if (function_exists('acf_add_options_page')) {
         'redirect' => false
     ));
 }
-
-function custom_register_post_types()
-{
-    $post_types = [
-        [
-            "post_type_name" => "iphone",
-            "name" => "iPhone",
-            "name_plural" => "iPhones",
-            "name_lowercase" => "iPhone",
-            "name_lowercase_plural" => "iPhones",
-            'menu_icon' => 'dashicons-shield-alt',
-            "supports" => ['title', 'editor', 'thumbnail'],
-            "has_archive" => false,
-        ],
-        [
-            "post_type_name" => "ipad",
-            "name" => "iPad",
-            "name_plural" => "iPades",
-            "name_lowercase" => "iPad",
-            "name_lowercase_plural" => "iPades",
-            'menu_icon' => 'dashicons-shield-alt',
-            "supports" => ['title', 'editor', 'thumbnail'],
-            "has_archive" => false,
-        ],
-        [
-            "post_type_name" => "macbook",
-            "name" => "MacBook",
-            "name_plural" => "MacBooks",
-            "name_lowercase" => "MacBook",
-            "name_lowercase_plural" => "MacBooks",
-            'menu_icon' => 'dashicons-shield-alt',
-            "supports" => ['title', 'editor', 'thumbnail'],
-            "has_archive" => false,
-        ],
-        [
-            "post_type_name" => "apple-watch",
-            "name" => "Apple watch",
-            "name_plural" => "Apple watches",
-            "name_lowercase" => "Apple watch",
-            "name_lowercase_plural" => "Apple watches",
-            'menu_icon' => 'dashicons-shield-alt',
-            "supports" => ['title', 'editor', 'thumbnail'],
-            "has_archive" => false,
-        ],
-        [
-            "post_type_name" => "airpods",
-            "name" => "Airpods",
-            "name_plural" => "Airpods",
-            "name_lowercase" => "Airpods",
-            "name_lowercase_plural" => "Airpods",
-            'menu_icon' => 'dashicons-shield-alt',
-            "supports" => ['title', 'editor', 'thumbnail'],
-            "has_archive" => false,
-        ],
-    ];
-
-    foreach ($post_types as $post_type) {
-        $post_type_args = [
-            'labels' => [
-                'name' => __($post_type["name_plural"]),
-                'singular_name' => __($post_type["name"]),
-                'add_new' => __('Add New ' . $post_type["name"]),
-                'add_new_item' => __('Add New ' . $post_type["name"]),
-                'edit_item' => __('Edit ' . $post_type["name"]),
-                'new_item' => __('New ' . $post_type["name"]),
-                'view_item' => __('View ' . $post_type["name"]),
-                'view_items' => __('View ' . $post_type["name_plural"]),
-                'search_items' => __('Search ' . $post_type["name_plural"]),
-                'not_found' => __('No ' . $post_type["name_lowercase_plural"] . ' found'),
-                'not_found_in_trash' => __('No ' . $post_type["name_lowercase_plural"] . ' found in Trash'),
-                'all_items' => __('All ' . $post_type["name_plural"]),
-                'archives' => __($post_type["name"] . ' Archives'),
-                'attributes' => __($post_type["name"] . ' Attributes'),
-                'insert_into_item' => __('Insert into ' . $post_type["name_lowercase"]),
-                'uploaded_to_this_item' => __('Uploaded to this ' . $post_type["name_lowercase"]),
-                'item_published ' => __($post_type["name"] . ' published.'),
-                'item_published_privately' => __($post_type["name"] . ' published privately.'),
-                'item_reverted_to_draft' => __($post_type["name"] . ' reverted to draft.'),
-                'item_scheduled' => __($post_type["name"] . ' scheduled.'),
-                'item_updated' => __($post_type["name"] . ' updated.'),
-            ],
-            'menu_icon' => $post_type['menu_icon'],
-            'public' => true,
-            'has_archive' => $post_type["has_archive"],
-            'menu_position' => 5,
-            'show_in_rest' => true,
-            'supports' => $post_type["supports"],
-            'taxonomies' => $post_type["taxonomies"] ?? [],
-
-        ];
-
-        register_post_type($post_type["post_type_name"], $post_type_args);
-    }
-
-}
-
-add_action('init', 'custom_register_post_types');
 
 add_action('admin_menu', 'remove_menus_ssh');
 
