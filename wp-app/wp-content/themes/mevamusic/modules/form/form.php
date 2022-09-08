@@ -7,16 +7,17 @@ Mode: preview
 
 $title = get_field('title');
 $form = get_field('contact_form');
+$captionBlock = get_field('caption_section');
 
 ?>
 
 <?php if (!is_admin()) : ?>
-    <section id="form" class="default-section form-section ">
+    <section class="default-section form-section">
         <div class="container">
-            <div class="form__wrapper">
-                <div class="form__left">
+            <div class="form-section__wrapper">
+                <div class="form__left form-section__form">
                     <?php if (!empty($title)) : ?>
-                        <h2 class="form__title section-title">
+                        <h2 class="form__title section-title form-section__title">
                             <?= $title ?>
                         </h2>
                     <?php endif; ?>
@@ -27,7 +28,9 @@ $form = get_field('contact_form');
                         </div>
                     <?php endif; ?>
                 </div>
-                <div class="form__right">1</div>
+                <div class="form__right">
+                    <p class="form-section__caption"><?= $captionBlock['caption'] ?></p>
+                </div>
             </div>
         </div>
     </section>

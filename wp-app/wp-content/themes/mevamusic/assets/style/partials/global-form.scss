@@ -1,6 +1,66 @@
-//@import "../variables";
-//
-//.wpcf7 {
+@import "../variables";
+
+.wpcf7-form {
+  .wpcf7-response-output {
+    display: none;
+  }
+
+  font-size: 18px;
+
+  .phone-field {
+    background-color: red;
+    margin-bottom: 30px;
+
+    input {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+
+      font: inherit;
+    }
+
+    .wpcf7-not-valid-tip {
+      display: none;
+    }
+  }
+
+  .text-field {
+    margin-bottom: 40px;
+
+     textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+
+       font: inherit;
+       resize: none;
+    }
+  }
+
+  .save-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      padding: 15px 45px;
+
+      font: inherit;
+    }
+
+    .wpcf7-spinner {
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .save-btn__wrapper {
+      position: relative;
+    }
+  }
+
 //  &-response-output {
 //    display: none;
 //  }
@@ -105,4 +165,4 @@
 //    }
 //
 //  }
-//}
+}
