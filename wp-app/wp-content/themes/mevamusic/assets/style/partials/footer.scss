@@ -3,6 +3,7 @@
 .main-footer {
   background-color: #0F0F0F;
   padding: 5px 0;
+  position: relative;
 
   @include _768 {
     padding: 15px 0;

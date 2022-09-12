@@ -5,6 +5,10 @@ body, html, p {
     padding: 0;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .main {
     min-height: 100vh;
     background-repeat: no-repeat;

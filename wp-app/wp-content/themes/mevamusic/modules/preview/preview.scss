@@ -3,8 +3,17 @@
 .index-preview {
   height: 100vh;
 
-  background-size: cover;
-  background-repeat: no-repeat;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+
+  &__background {
+    display: block;
+    width: 110%;
+    height: auto;
+    position: absolute;
+
+    margin: 0 auto;
+  }
 
   &__wrapper {
     height: 100%;

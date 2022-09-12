@@ -12,16 +12,16 @@ $overlay_subtitle = get_field('subtitle_overlay');
 $overlay_link = get_field('overlay_link');
 ?>
 
-
 <?php if (!is_admin()) : ?>
-        <section id="index-preview" class="index-preview"
-         <?php if (!empty($bgImage)) : ?>style="background-image: url('<?= $bgImage ?>')" <?php endif; ?>>
+        <section id="index-preview" class="index-preview">
+<!--            <img class="index-preview__background" src="--><?//= $bgImage ?><!--" alt="">-->
             <div class="container">
-                <div class="index-preview__wrapper">
+<!--                <div class="index-preview__wrapper">-->
+
                     <?= get_template_part( '/components/overlay-box/overlay-box', null, [
-                            'title' => $overlay_title,
-                            'subtitle' => $overlay_subtitle,
-                            'subtitle__link' => $overlay_link,
+                        'title' => $overlay_title,
+                        'subtitle' => $overlay_subtitle,
+                        'subtitle__link' => $overlay_link,
                     ]); ?>
                 </div>
             </div>
