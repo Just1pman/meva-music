@@ -31,7 +31,7 @@ body, html, p {
     height: 100%;
     padding: 0 10px;
     margin: 0 auto;
-    box-sizing: content-box;
+    box-sizing: border-box;
 
     @include _768 {
         max-width: 668px;
