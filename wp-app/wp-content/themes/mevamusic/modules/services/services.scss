@@ -5,20 +5,51 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+
+    @include _768 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include _480 {
+      flex-direction: column;
+    }
+
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    @include _480 {
+      padding: 20px 0;
+    }
   }
 
   .card {
-    width: 285px;
+    flex-grow: 1;
+    width: 40%;
     color: $c-white;
     background-color: $c-blue;
+    padding-bottom: 20px;
 
-    padding-bottom: 15px;
+    @include _480 {
+      display: flex;
+      width: 100%;
+      padding-bottom: unset;
+    }
 
     &__title {
       margin: 20px 0 50px;
       padding: 0 20px;
       text-align: center;
       text-transform: uppercase;
+
+      @include _480 {
+        margin: 0;
+      }
     }
 
     &__button {

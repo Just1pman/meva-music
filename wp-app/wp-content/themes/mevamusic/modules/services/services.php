@@ -25,8 +25,10 @@ $services = get_field('cards');
                             src="<?= $service['image']['url'] ?>"
                             alt="<?= $service['photo']['description'] ?>"
                         >
-                        <p class="card__title"><?= $service['title'] ?></p>
-                        <button class="card__button">Подробнее</button>
+                        <div class="services__content-wrapper">
+                            <p class="card__title"><?= $service['title'] ?></p>
+                            <button class="card__button">Подробнее</button>
+                        </div>
                     </div>
 
                 <?php endforeach; ?>
