@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_631389fa60cb2",
+            "label": "Контактная форма",
+            "name": "contact_form",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6313787fc2f6d",
             "label": "Секция с цитатой",
             "name": "caption_section",
@@ -80,25 +99,6 @@
                     "mime_types": ""
                 }
             ]
-        },
-        {
-            "key": "field_631389fa60cb2",
-            "label": "Контактная форма",
-            "name": "contact_form",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -118,5 +118,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1662224914
+    "modified": 1663270372
 }
