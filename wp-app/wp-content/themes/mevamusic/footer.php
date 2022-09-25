@@ -16,5 +16,19 @@
         </div>
     </div>
 </div>
+
+<!--МОДАЛЬНЫЕ ОКНА-->
+<?php if (wp_is_mobile()) : ?>
+    <?= get_template_part( '/components/modals/base-modal', null, [
+        'additionalClass' => 'header-modal',
+        'type' => 'header'
+    ]); ?>
+<?php endif; ?>
+
+<?= get_template_part( '/components/modals/base-modal', null, [
+    'additionalClass' => 'map-modal',
+    'type' => 'map'
+]); ?>
+
 </body>
 </html>

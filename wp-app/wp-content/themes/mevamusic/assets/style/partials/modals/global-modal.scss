@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.global-modal {
+  display: none;
+}
+
+.global-modals {
+  &-wrapper {
+    .global-modal {
+      display: block;
+    }
+
+    height: 100%;
+    display: flex;
+    padding: 45px 15px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  &__socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+}

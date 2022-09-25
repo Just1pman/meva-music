@@ -1,24 +1,29 @@
-// const burgerMenu = document.querySelector('.burger-mobile')
-// const burgerMenuClose = document.querySelector('.burger-mobile-close')
-// const headerMobile = document.querySelector('header .mobile')
-// const html = document.querySelector('html');
-//
-// if (burgerMenu !== null) {
-//   burgerMenu.addEventListener('click', () => {
-//     if (headerMobile !== null) {
-//       headerMobile.classList.add('js-active-menu')
-//       html.classList.add('js-active-menu')
-//       burgerMenuClose.style.display = 'block';
-//       burgerMenu.style.display = 'none';
-//     }
-//   })
-//
-//   burgerMenuClose.addEventListener('click', () => {
-//     if (burgerMenuClose !== null) {
-//       headerMobile.classList.remove('js-active-menu')
-//       html.classList.remove('js-active-menu')
-//       burgerMenuClose.style.display = 'none';
-//       burgerMenu.style.display = 'block';
-//     }
-//   })
-// }
+const header = document.querySelector('#header');
+
+Fancybox.bind('[data-fancybox="header"]', {
+    animated: false,
+    showClass: false,
+    hideClass: false,
+
+    closeButton: "top",
+    dragToClose: true,
+
+    Toolbar: false,
+    Thumbs: false,
+
+    on: {
+        ready: (fancybox) => {
+            header.classList.add('opening-menu');
+            const headerModal = document.querySelector('.header-modal');
+
+
+            const div = document.createElement("div");
+            div.classList.add('global-modals-wrapper');
+            div.innerHTML = headerModal.outerHTML;
+            fancybox.$backdrop.after(div);
+        },
+        destroy : () => {
+            header.classList.remove('opening-menu');
+        },
+    },
+});

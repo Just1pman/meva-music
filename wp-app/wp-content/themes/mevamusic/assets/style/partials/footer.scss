@@ -21,41 +21,41 @@
     }
   }
 
-  .social-networks {
-    &__list {
-      flex-wrap: wrap;
-      @include _480 {
-        justify-content: center;
-      }
+  &__social-box {
+    @include _768 {
+      margin-bottom: 15px;
+    }
+  }
+}
 
-      @include _480 {
-        li:nth-last-child(2) {
-          margin: 0;
-        }
-      }
+.social-networks {
+  &__list {
+    flex-wrap: wrap;
+    @include _480 {
+      justify-content: center;
     }
 
-    &__item--phone {
-      @include _480 {
-        order: -1;
-        width: 100%;
-
-        margin-bottom: 15px;
-        margin-left: 0;
-      }
-
-      a {
-        @include _480 {
-          margin: 0 auto;
-          width: 50%;
-        }
+    @include _480 {
+      li:nth-last-child(2) {
+        margin: 0;
       }
     }
   }
 
-  &__social-box {
-    @include _768 {
+  &__item--phone {
+    @include _480 {
+      order: -1;
+      width: 100%;
+
       margin-bottom: 15px;
+      margin-left: 0;
+    }
+
+    a {
+      @include _480 {
+        margin: 0 auto;
+        width: 50%;
+      }
     }
   }
 }

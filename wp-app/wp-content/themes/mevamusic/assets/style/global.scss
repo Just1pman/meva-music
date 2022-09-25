@@ -56,3 +56,13 @@ ul {
     white-space: nowrap;
     overflow: hidden;
 }
+
+.fancybox__container {
+    .has-error {
+        display: none;
+    }
+    .fancybox__carousel {
+        height: 0;
+    }
+
+}
