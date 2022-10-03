@@ -12,6 +12,10 @@
         <?= get_template_part( '/components/modals/chunks/map-modal'); ?>
     <?php endif; ?>
 
+    <?php if ($type === 'more') :?>
+        <?= get_template_part( '/components/modals/chunks/more-modal'); ?>
+    <?php endif; ?>
+
     <div class="global-modals__socials">
         <?= get_template_part( '/components/social-networks/social-networks'); ?>
     </div>

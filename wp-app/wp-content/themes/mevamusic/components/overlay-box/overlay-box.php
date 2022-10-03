@@ -3,7 +3,7 @@
     $subtitle = $args['subtitle'] ?? null;
     $subtitle__link = $args['subtitle__link'] ?? null;
 ?>
-<?php if($title) : ?>
+<?php if ($title) : ?>
     <div class="index-preview__overlay overlay">
         <h1 class="overlay__title">
             <?= $title ?>
@@ -12,12 +12,9 @@
         <?php if ($subtitle && $subtitle__link) : ?>
             <b class="overlay__subtitle">
                 <?= $subtitle ?>
-                <a
-                        class="overlay__link btn-modal map-modal"
-                        href="#map-modal"
-                >
+                <span class="overlay__link" data-fancybox="map">
                     <?= $subtitle__link ?>
-                </a>
+                </span>
             </b>
         <?php endif; ?>
     </div>

@@ -30,5 +30,10 @@
     'type' => 'map'
 ]); ?>
 
+<?= get_template_part( '/components/modals/base-modal', null, [
+    'additionalClass' => 'more-modal',
+    'type' => 'more'
+]); ?>
+
 </body>
 </html>

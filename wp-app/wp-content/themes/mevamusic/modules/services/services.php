@@ -18,16 +18,37 @@ $services = get_field('cards');
                 </h2>
             <?php endif; ?>
             <div class="services__wrapper">
-                <?php foreach ($services as $service) : ?>
-                    <div class="card">
+                <?php foreach ($services as $key => $service) : ?>
+                    <?php
+                        $more = $service['more'];
+                        $introduction = str_replace('  ', 'break-row', $more['introduction']);
+                        $descriptionList = null;
+
+                        if (!empty($service['more']['description_item'])) {
+                            $descriptionList = '<ul class="js-more-modal__list services__list visually-hidden">';
+
+                            foreach ($service['more']['description_item'] as $descriptionItem) {
+                                $text = $descriptionItem['description_item_text'];
+                                $descriptionList .= "<li>$text</li>";
+                            }
+
+                            $descriptionList .= '</ul>';
+                        }
+                    ?>
+
+                    <div class="card js-service-card" data-html="true"
+                         <?php if (!empty($service['more'])) : ?>data-description="<?= $introduction ?>"<?php endif; ?>
+                         <?php if (!empty($service['price'])) : ?>data-price="<?= $service['price'] ?>"<?php endif; ?>
+                    >
+                        <?= $descriptionList ?>
                         <img
-                            class="hide-text"
+                            class="hide-text js-service-card__img"
                             src="<?= $service['image']['url'] ?>"
                             alt="<?= $service['photo']['description'] ?>"
                         >
                         <div class="services__content-wrapper">
-                            <p class="card__title"><?= $service['title'] ?></p>
-                            <button class="card__button">Подробнее</button>
+                            <h3 class="js-card__title card__title"><?= $service['title'] ?></h3>
+                            <button id="js_services-btn-<?= $key ?>" class="card__button js-service-card_btn" data-fancybox="more-btn">Подробнее</button>
                         </div>
                     </div>
 
