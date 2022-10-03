@@ -88,3 +88,17 @@ $('.js-service-card_btn').each(function () {
         },
     });
 })
+
+Fancybox.bind('[data-fancybox="consultant"]', {
+    ...commonParams,
+    on: {
+        ready: (fancybox) => {
+            const headerModal = document.querySelector('.consultant-modal');
+            const div = document.createElement("div");
+            div.classList.add('global-modals-wrapper');
+
+            div.innerHTML = headerModal.outerHTML;
+            fancybox.$backdrop.after(div);
+        },
+    },
+});

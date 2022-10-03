@@ -6,8 +6,10 @@ Mode: preview
 */
 
 $title = get_field('title');
-$form = get_field('contact_form');
+$form = get_field('form_code', 'options');
 $captionBlock = get_field('caption_section');
+$image = $captionBlock['bg_image']['url'];
+
 
 ?>
 
@@ -28,7 +30,7 @@ $captionBlock = get_field('caption_section');
                         </div>
                     <?php endif; ?>
                 </div>
-                <div class="form__right">
+                <div class="form__right" style="background-image: url('<?= $image ?>')">
                     <p class="form-section__caption"><?= $captionBlock['caption'] ?></p>
                 </div>
             </div>

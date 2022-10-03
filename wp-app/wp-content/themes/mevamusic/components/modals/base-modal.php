@@ -16,6 +16,10 @@
         <?= get_template_part( '/components/modals/chunks/more-modal'); ?>
     <?php endif; ?>
 
+    <?php if ($type === 'consultant') :?>
+        <?= get_template_part( '/components/modals/chunks/consultant-modal'); ?>
+    <?php endif; ?>
+
     <div class="global-modals__socials">
         <?= get_template_part( '/components/social-networks/social-networks'); ?>
     </div>
