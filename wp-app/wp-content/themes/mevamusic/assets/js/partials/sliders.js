@@ -1,5 +1,5 @@
 const settings = {
-    // autoplay: true,
+    autoplay: true,
     loop: true,
     spaceBetween: 30,
     grabCursor: true,

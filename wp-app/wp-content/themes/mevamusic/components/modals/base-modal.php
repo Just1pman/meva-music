@@ -1,6 +1,7 @@
 <?php
     $type = $args['type'] ?? null;
     $additionalClass = $args['additionalClass'] ?? null;
+    $isShowSocials = $args['isShowSocials'] ?? true;
 ?>
 
 <div class="global-modal <?php if ($additionalClass) : ?><?= $additionalClass ?><?php endif; ?>">
@@ -16,12 +17,10 @@
         <?= get_template_part( '/components/modals/chunks/more-modal'); ?>
     <?php endif; ?>
 
-    <?php if ($type === 'consultant') :?>
-        <?= get_template_part( '/components/modals/chunks/consultant-modal'); ?>
+    <?php if ($isShowSocials) : ?>
+        <div class="global-modals__socials">
+            <?= get_template_part( '/components/social-networks/social-networks'); ?>
+        </div>
     <?php endif; ?>
-
-    <div class="global-modals__socials">
-        <?= get_template_part( '/components/social-networks/social-networks'); ?>
-    </div>
 </div>
 
