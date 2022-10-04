@@ -5,6 +5,10 @@
   &__wrapper {
     width: 100%;
     height: 300px;
+
+    @include _768 {
+      height: auto;
+    }
   }
 
   .swiper {
@@ -22,7 +26,7 @@
 
   .swiper-slide img {
     display: block;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 }

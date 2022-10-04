@@ -1,5 +1,5 @@
 const settings = {
-    autoplay: true,
+    // autoplay: true,
     loop: true,
     spaceBetween: 30,
     grabCursor: true,
@@ -21,11 +21,21 @@ const settings = {
 }
 
 new Swiper('.aboutUsSlider', {
-    slidesPerView: 1,
+    slidesPerView: "auto",
     ...settings,
 });
 
 new Swiper(".wide-swiper", {
-    slidesPerView: "auto",
+    slidesPerView: 1,
+    breakpoints: {
+        // when window width is >= 320px
+        768: {
+            slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        900: {
+            slidesPerView: 3,
+        }
+    },
     ...settings,
 });
