@@ -15,7 +15,10 @@
     @include _480 {
       flex-direction: column;
     }
+  }
 
+  &__list {
+    margin-bottom: 15px;
   }
 
   &__content-wrapper {

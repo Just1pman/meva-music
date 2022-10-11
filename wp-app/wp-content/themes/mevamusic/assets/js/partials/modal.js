@@ -73,7 +73,10 @@ $('.js-service-card_btn').each(function () {
 
                 title.innerHTML = cardTitle;
                 description.innerHTML = cardDescription.replace(/break-row/g, "<br/>")
-                list.innerHTML = cardDescriptionList
+                list.innerHTML = '';
+                if(cardDescriptionList) {
+                    list.innerHTML = cardDescriptionList
+                }
                 price.innerHTML = cardPrice
                 image.src = cardImageUrl
 
