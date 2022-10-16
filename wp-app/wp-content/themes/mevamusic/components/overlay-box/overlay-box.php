@@ -11,9 +11,9 @@
 
         <?php if ($subtitle && $subtitle__link) : ?>
             <b class="overlay__subtitle">
-<!--                --><?//= $subtitle ?>
+                <?= $subtitle ?>
                 <span class="overlay__link" data-fancybox="map">
-<!--                    --><?//= $subtitle__link ?>
+                    <?= $subtitle__link ?>
                 </span>
             </b>
         <?php endif; ?>

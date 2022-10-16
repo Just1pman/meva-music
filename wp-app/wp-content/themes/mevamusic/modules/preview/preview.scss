@@ -1,12 +1,12 @@
 @import "../../assets/style/variables";
 
 .index-preview {
-  height: 100vh;
+  //height: 100vh;
 
 
   &__background {
     display: block;
-    width: 110%;
+    //width: 110%;
     height: auto;
     position: absolute;
 
@@ -14,13 +14,9 @@
   }
 
   &__wrapper {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-
-    @include _768 {
-      align-items: flex-end;
-    }
   }
 
   &__overlay {
