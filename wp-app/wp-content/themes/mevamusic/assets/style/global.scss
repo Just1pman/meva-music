@@ -25,11 +25,24 @@ body, html {
     text-transform: uppercase;
 
     margin-bottom: 50px;
+
+    @include _992 {
+        margin-bottom: 30px;
+    }
 }
 
 .default-section {
     padding-top: 50px;
     padding-bottom: 95px;
+
+    @include _992 {
+        padding-bottom: 50px;
+    }
+
+    @include  _768 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 .container {

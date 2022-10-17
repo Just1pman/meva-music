@@ -29,7 +29,7 @@
     }
 
     @include _480 {
-      font-size: 30px;
+      font-size: 36px;
       line-height: 45px;
     }
   }
@@ -37,6 +37,10 @@
   .overlay__subtitle {
     color: $c-white;
     font-size: 24px;
+
+    @include _480 {
+      font-size: 20px;
+    }
   }
 
   &__link {

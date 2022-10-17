@@ -6,18 +6,24 @@ Mode: preview
 */
 
 $bgImage = get_field('bgimage');
-
 $label = get_field('label');
 ?>
+<?php if(!empty($bgImage)): ?>
+    <style>
 
+        .index-preview {
+            background-image: url("<?= $bgImage ?>");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+        }
 
+    </style>
+<?php endif; ?>
 <?php if (!is_admin()) : ?>
-    <section id="index-preview" class="index-preview"
-
-    <?php if (!empty($bgImage)) : ?>
-        <img src="<?= $bgImage ?>" alt="">
-    <?php endif;  ?>
-
+    <section id="index-preview" class="index-preview">
         <div class="container">
             <div class="index-preview__wrapper">
                 <?= get_template_part( '/components/overlay-box/overlay-box', null, [
