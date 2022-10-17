@@ -39,12 +39,15 @@
 
   .form__right {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-basis: 40%;
     padding: 30px;
 
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    @include _768 {
+      background-position: center;
+    }
   }
 }
