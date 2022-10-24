@@ -1,0 +1,56 @@
+@import "../../assets/style/variables";
+
+.about-us {
+
+  &__wrapper {
+    display: flex;
+    gap: 140px;
+
+    @include _1280 {
+      gap: 70px;
+    }
+
+    @include _768 {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+
+    @include _480 {
+      gap: 30px;
+    }
+  }
+  &__slider {
+    width: 50%;
+
+    @include _768 {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+    @include _1280 {
+      height: unset;
+    }
+  }
+}
