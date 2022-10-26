@@ -5,6 +5,7 @@
   min-height: $header-height;
   display: flex;
   align-items: center;
+  font-family: "cenurygot_bold", Arial, sans-serif;
 
   position: fixed;
   right: 0;
@@ -30,7 +31,6 @@
     a {
       transition: $transition;
       font-size: 16px;
-      font-family: "cenurygot_bold", Arial, sans-serif;
     }
 
     .burger-mobile {
