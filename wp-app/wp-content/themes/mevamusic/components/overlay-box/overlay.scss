@@ -12,6 +12,7 @@
   .overlay__title {
     padding: 0;
     margin: 0 0 30px;
+    font-family: "cenurygot_bold", Arial, sans-serif;
 
     color: $c-white;
     font-size: 70px;
@@ -37,6 +38,7 @@
   .overlay__subtitle {
     color: $c-white;
     font-size: 24px;
+    font-family: "cenurygot", Arial, sans-serif;
 
     @include _480 {
       font-size: 20px;

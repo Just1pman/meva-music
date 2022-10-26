@@ -23,6 +23,7 @@ body, html {
     font-size: 36px;
     line-height: 49px;
     text-transform: uppercase;
+    font-family: "cenurygot", Arial, sans-serif;
 
     margin-bottom: 50px;
 
@@ -91,5 +92,22 @@ ul {
     .fancybox__carousel {
         height: 0;
     }
+}
 
+@font-face {
+    font-family: 'cenurygot';
+    src: url('../fonts/centurygothic.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/centurygothic.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/centurygothic.ttf') format('woff'), /* Modern Browsers */
+    url('../fonts/centurygothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/centurygothic.ttf') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'cenurygot_bold';
+    src: url('../fonts/centurygothic_bold.ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/centurygothic_bold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/centurygothic_bold.ttf') format('woff'), /* Modern Browsers */
+    url('../fonts/centurygothic_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/centurygothic_bold.ttf') format('svg'); /* Legacy iOS */
 }
