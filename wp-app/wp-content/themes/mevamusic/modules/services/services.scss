@@ -49,6 +49,7 @@
       padding: 0 20px;
       text-align: center;
       text-transform: uppercase;
+      font-family: "cenurygot_bold", Arial, sans-serif;
 
       @include _480 {
         margin: 0;
@@ -63,6 +64,7 @@
       padding: 0 15px;
       background-color: $c-red;
       border: none;
+      font-family: "cenurygot", Arial, sans-serif;
 
       font-size: 14px;
       line-height: 37px;
