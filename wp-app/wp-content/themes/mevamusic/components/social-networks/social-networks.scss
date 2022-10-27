@@ -4,7 +4,28 @@
   &__list {
     display: flex;
     margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    //width: 0;
+    gap: 15px;
     padding: 0;
+
+
+    @include _992 {
+      padding: 11px 0 ;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      //display: grid;
+    }
+
+    @include _768 {
+      //width: 100%;
+      padding: 0;
+    }
+
+    @include _480 {
+      display: grid;
+    }
   }
 
   &__item {
@@ -18,21 +39,23 @@
       }
     }
 
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-
     &--phone {
+      @include _992 {
+        order: -1;
+        grid-column: 1/-1;;
+      }
+
+
       a {
+
         height: 40px;
-        width: 120px;
+        width: 100%;
         background-color: #851222;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 15px;
-
-        margin-left: 10px;
+        box-sizing: border-box;
       }
 
       .phone__icon {

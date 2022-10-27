@@ -9,8 +9,20 @@
     padding: 15px 0;
   }
 
+  .social-networks {
+    &__list {
+      @include _768 {
+        display: grid;
+      }
+    }
+  }
+
   &__logo {
     padding: 5px 0;
+    @include _768 {
+      padding: 0;
+    }
+
 
     img {
       height: auto;
@@ -38,37 +50,37 @@
   }
 }
 
-.social-networks {
-  &__list {
-    flex-wrap: wrap;
-    @include _480 {
-      justify-content: center;
-    }
+//.social-networks {
+  //&__list {
+  //  flex-wrap: wrap;
+  //  @include _480 {
+  //    justify-content: center;
+  //  }
+  //
+  //  @include _480 {
+  //    li:nth-last-child(2) {
+  //      margin: 0;
+  //    }
+  //  }
+  //}
 
-    @include _480 {
-      li:nth-last-child(2) {
-        margin: 0;
-      }
-    }
-  }
-
-  &__item--phone {
-    @include _480 {
-      order: -1;
-      width: 100%;
-
-      margin-bottom: 15px;
-      margin-left: 0;
-    }
-
-    a {
-      @include _480 {
-        margin: 0 auto;
-        width: 50%;
-      }
-    }
-  }
-}
+  //&__item--phone {
+  //  @include _480 {
+  //    order: -1;
+  //    width: 100%;
+  //
+  //    margin-bottom: 15px;
+  //    margin-left: 0;
+  //  }
+  //
+  //  a {
+  //    @include _480 {
+  //      margin: 0 auto;
+  //      width: 50%;
+  //    }
+  //  }
+  //}
+//}
 
 .online-consultant {
   position: fixed;
