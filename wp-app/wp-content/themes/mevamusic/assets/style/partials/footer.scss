@@ -9,6 +9,16 @@
     padding: 15px 0;
   }
 
+  &__logo {
+    padding: 5px 0;
+
+    img {
+      height: auto;
+      width: 75px;
+    }
+
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
