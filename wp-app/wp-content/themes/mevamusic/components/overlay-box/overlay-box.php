@@ -4,7 +4,7 @@
     $subtitle__link = $args['subtitle__link'] ?? null;
 ?>
 <?php if ($title) : ?>
-    <div class="index-preview__overlay overlay">
+    <div class="index-preview__overlay overlay" data-aos="fade-down">
         <h1 class="overlay__title">
             <?= $title ?>
         </h1>

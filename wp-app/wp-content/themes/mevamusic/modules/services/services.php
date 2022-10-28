@@ -39,6 +39,8 @@ $services = get_field('cards');
                     <div class="card js-service-card" data-html="true"
                          <?php if (!empty($service['more'])) : ?>data-description="<?= $introduction ?>"<?php endif; ?>
                          <?php if (!empty($service['price'])) : ?>data-price="<?= $service['price'] ?>"<?php endif; ?>
+                         data-aos="fade-right"
+                         data-aos-delay="<?= $key + 1 ?>00"
                     >
                         <?= $descriptionList ?>
                         <img

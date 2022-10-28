@@ -11,7 +11,7 @@ $photos = get_field('photos');
 ?>
 
 <?php if (!is_admin()) : ?>
-        <section id="about-us" class="about-us default-section">
+        <section id="about-us" class="about-us default-section" data-aos="fade-left">
             <div class="container">
                 <?php if (!empty($title)) : ?>
                     <h2 class="about-us__title section-title">

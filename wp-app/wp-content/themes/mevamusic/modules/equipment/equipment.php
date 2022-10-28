@@ -10,7 +10,7 @@ $photos = get_field('photos');
 ?>
 
 <?php if (!is_admin()) : ?>
-    <section id="equipment" class="equipment default-section">
+    <section id="equipment" class="equipment default-section" data-aos="fade-right">
         <div class="container">
             <?php if (!empty($title)) : ?>
                 <h2 class="about-us__title section-title">

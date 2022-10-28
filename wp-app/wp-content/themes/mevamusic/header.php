@@ -20,7 +20,7 @@ $bg_image = get_field('bg_img', 'options');
     <div class="container">
         <div class="header-block">
             <?php if ($logo) : ?>
-                <span class="header-logo">
+                <span class="header-logo" data-aos="fade-down">
                     <img src="<?= $logo['url'] ?>" alt="<?= $logo['title'] ?>" loading="lazy">
                 </span>
             <?php endif; ?>
