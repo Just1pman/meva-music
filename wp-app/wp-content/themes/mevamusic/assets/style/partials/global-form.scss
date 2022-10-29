@@ -54,6 +54,7 @@
 
     input {
       padding: 15px 45px;
+      @include hover;
 
       font: inherit;
     }

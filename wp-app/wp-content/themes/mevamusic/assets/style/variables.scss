@@ -1,15 +1,3 @@
-//$c-black: #000000;
-//$c-light-black: #333333;
-//$c-gray: #ACACAC;
-//$c-gray-footer: #E5E5E5;
-//$c-blue: #157DFB;#0A192F
-//$c-blue-hover: #075bc1;
-//$c-gray-background: #F4F4F4;
-//$c-gray-line: #C4C4C4;
-//$c-dark-gray:#888888;
-//$c-red: red;
-//$font: 'Manrope', sans-serif;
-
 $transition: all .2s ease-in-out;
 
 $c-black: #0F0F0F;
@@ -19,6 +7,11 @@ $c-green: #1ED760;
 $c-blue: #0A192F;
 $c-black-overlay: rgba(0, 0, 0, 0.5);
 $c-red: #DC3545;
+
+$c-pink: #fab2f2;
+//$c-blue: #5ebef1;
+$c-blue-light: #9f9ae2;
+$c-purple: #dc6cd3;
 
 
 $header-height: 60px;
@@ -44,5 +37,11 @@ $header-height: 60px;
 @mixin _480 {
     @media (max-width: 480px) {
         @content;
+    }
+}
+
+@mixin hover {
+    &:hover {
+        color: $c-purple;
     }
 }

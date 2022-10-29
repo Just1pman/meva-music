@@ -49,12 +49,10 @@
     position: relative;
     transition: $transition;
     cursor: pointer;
+    @include hover;
 
-    &:hover {
-      color: $c-green;
-    }
     &:hover:before {
-      background: $c-green;
+      background-color: $c-purple;
     }
 
     &:before {

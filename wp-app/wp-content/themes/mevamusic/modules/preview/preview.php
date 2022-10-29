@@ -14,7 +14,7 @@ $label = get_field('label');
         .index-preview {
             background-image: url("<?= $bgImage ?>");
             background-repeat: no-repeat;
-            background-position: center;
+            background-position-x: center;
             background-size: cover;
 
         }

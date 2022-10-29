@@ -42,9 +42,9 @@
       margin: 0;
 
       a {
+        @include hover;
         display: block;
         padding: 15px 20px;
-
 
         &:hover {
           background: $c-gray;
