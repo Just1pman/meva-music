@@ -16,8 +16,7 @@ $label = get_field('label');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            width: 100%;
-            height: auto;
+
         }
 
     </style>
