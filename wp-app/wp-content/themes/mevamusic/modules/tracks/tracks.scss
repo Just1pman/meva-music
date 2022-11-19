@@ -1,56 +1,43 @@
 @import "../../assets/style/variables";
 
-.about-us {
+.tracks {
 
   &__wrapper {
-    display: flex;
-    gap: 140px;
-
-    @include _1280 {
-      gap: 70px;
-    }
+    width: 100%;
+    height: 130px;
 
     @include _768 {
-      flex-direction: column-reverse;
-      gap: 50px;
-    }
-
-    @include _480 {
-      gap: 30px;
-    }
-  }
-  &__slider {
-    width: 50%;
-
-    @include _768 {
-      width: 100%;
+      height: 240px;
     }
   }
 
-  img {
-    width: auto;
+  .swiper {
+    width: 100%;
     height: 100%;
   }
 
-  &__description {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .swiper-wrapper {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.card {
-  &-wrapper {
+  .swiper-slide {
     display: flex;
     justify-content: center;
-    height: 500px;
 
-    @include _1280 {
-      height: unset;
+
+    .slide-wrapper {
+      @include _768 {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+      }
+      display: flex;
+      column-gap: 50px;
+
+      audio {
+        display: block;
+        width: 300px;
+      }
+
+      .slide-title {
+        padding-left: 20px;
+      }
     }
   }
 }
