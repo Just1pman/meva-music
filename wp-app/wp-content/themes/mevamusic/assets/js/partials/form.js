@@ -1,7 +1,5 @@
-const phoneField = document.getElementById('input-tel');
-
-var phoneMask = IMask(
-    phoneField, {
+const phoneMask = IMask(
+    document.getElementById('input-tel'), {
         mask: '+{375}(00)000-00-00'
     }
 );
