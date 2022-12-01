@@ -111,3 +111,7 @@ ul {
     url('../fonts/centurygothic_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
     url('../fonts/centurygothic_bold.ttf') format('svg'); /* Legacy iOS */
 }
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
