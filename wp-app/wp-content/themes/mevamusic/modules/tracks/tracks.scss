@@ -22,7 +22,6 @@
 
 
     .slide-wrapper {
-      min-width: 650px;
       @include _768 {
         flex-direction: column;
         justify-content: center;
