@@ -22,6 +22,7 @@
 
 
     .slide-wrapper {
+      min-width: 650px;
       @include _768 {
         flex-direction: column;
         justify-content: center;
@@ -31,6 +32,8 @@
       column-gap: 50px;
 
       audio {
+        width: 300px;
+        min-width: 300px;
         display: block;
       }
 
