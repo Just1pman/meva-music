@@ -26,7 +26,6 @@ $photos = get_field('photos');
                                     <div class="swiper-slide">
                                         <div class="card-wrapper">
                                             <img
-                                                loading="lazy"
                                                 class="swiper-lazy hide-text"
                                                 data-src="<?= $photo['photo']['url'] ?>"
                                                 alt="<?= $photo['photo']['description'] ?>"
