@@ -11,7 +11,9 @@ $logo = get_field('logo', 'options');
                 <?= get_template_part('/components/social-networks/social-networks'); ?>
             </div>
             <div class="main-footer__logo">
-                <img src="<?= $logo['url'] ?>" alt="<?= $logo['title'] ?>" loading="lazy">
+                <picture>
+                    <img loading="lazy" src="<?= $logo['url'] ?>" alt="<?= $logo['title'] ?>" loading="lazy">
+                </picture>
             </div>
         </div>
     </div>

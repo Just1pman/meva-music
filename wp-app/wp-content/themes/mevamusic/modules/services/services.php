@@ -43,11 +43,14 @@ $services = get_field('cards');
                          data-aos-delay="<?= $key + 1 ?>00"
                     >
                         <?= $descriptionList ?>
-                        <img
-                            class="hide-text js-service-card__img"
-                            src="<?= $service['image']['url'] ?>"
-                            alt="<?= $service['photo']['description'] ?>"
-                        >
+                        <picture>
+                            <img
+                                loading="lazy"
+                                class="hide-text js-service-card__img"
+                                src="<?= $service['image']['url'] ?>"
+                                alt="<?= $service['photo']['description'] ?>"
+                            >
+                        </picture>
                         <div class="services__content-wrapper">
                             <h3 class="js-card__title card__title"><?= $service['title'] ?></h3>
                             <button id="js_services-btn-<?= $key ?>" class="card__button js-service-card_btn" data-fancybox="more-btn">Подробнее</button>

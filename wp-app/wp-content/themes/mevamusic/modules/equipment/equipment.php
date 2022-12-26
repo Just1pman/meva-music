@@ -22,11 +22,14 @@ $photos = get_field('photos');
                     <div class="swiper-wrapper">
                         <?php foreach ($photos as $photo) : ?>
                             <div class="swiper-slide">
-                                <img
-                                    class="swiper-lazy hide-text"
-                                    data-src="<?= $photo['photo']['url'] ?>"
-                                    alt="<?= $photo['photo']['description'] ?>"
-                                >
+                                <picture>
+                                    <img
+                                        loading="lazy"
+                                        class="swiper-lazy hide-text"
+                                        data-src="<?= $photo['photo']['url'] ?>"
+                                        alt="<?= $photo['photo']['description'] ?>"
+                                    >
+                                </picture>
                                 <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
                             </div>
 

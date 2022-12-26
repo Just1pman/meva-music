@@ -4,7 +4,7 @@
 <div class="more-modal__wrapper">
     <div class="more-modal__left">
         <picture>
-            <img class="more-modal__image" src="" alt="">
+            <img loading="lazy" class="more-modal__image" src="" alt="">
         </picture>
     </div>
     <div class="more-modal__right">
