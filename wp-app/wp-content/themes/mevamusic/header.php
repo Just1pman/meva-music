@@ -8,6 +8,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
     <meta name="robots" content="all">
     <meta name="keywords" content="Студия звукозаписи Гродно записать трек сведение мастеринг вокал гродно записать трек ">
+    <meta name="description" content="Звукозапись в Гродно. Качественное оборудование. Максимальное качество для каждого клиента. Работают профессионалы.">
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="Студия звукозаписи Гродно">
     <meta property="og:url" content="https://mewa.by">
